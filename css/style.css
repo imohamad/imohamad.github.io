@@ -1,0 +1,147 @@
+﻿@import url(reset.css);
+@import url(font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+body {
+	background-color: #fff;
+	color: #333;
+	font-size: 18px
+}
+
+.info{
+	margin:auto;
+	text-align: center;
+	height: 325px;
+    opacity: 0;
+}
+.info p{
+	color: #717176;
+	width: 600px;
+	margin: auto;
+	font-size: 19px;
+	line-height: 30px;
+	font-family: 'Questrial', sans-serif;
+}
+.avatar img{
+    width: 140px;
+    height: 140px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
+}
+.avatar2{
+	border: solid 2px #00AA55;
+	width: 140px;
+	height: 140px;
+	margin: auto auto 20px auto;
+	-moz-border-radius: 73px;/*Firefox*/
+-webkit-border-radius: 73px;/*Safari, Chrome*/
+border-radius: 73px;
+animation: 3s ease-out 2s normal none infinite pulsate;
+-webkit-animation: 3s ease-out 2s normal none infinite pulsate;
+-moz-animation: 3s ease-out 2s normal none infinite pulsate;
+-o-animation: 3s ease-out 2s normal none infinite pulsate;
+margin-top: -142px;
+}
+@keyframes pulsate {
+0% {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+20% {
+    opacity: 1;
+}
+30% {
+    opacity: 1;
+}
+60% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+}
+}
+@-webkit-keyframes pulsate {
+0% {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+20% {
+    opacity: 1;
+}
+30% {
+    opacity: 1;
+}
+60% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+}
+}
+@-moz-keyframes pulsate {
+0% {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+20% {
+    opacity: 1;
+}
+30% {
+    opacity: 1;
+}
+60% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+}
+}
+.social{
+	width: 400px;
+	margin: 20px auto;
+}
+.social li {
+    display: inline;
+    margin-left: 0;
+    margin-right: 0;
+}
+.social li a {
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    opacity: 1;
+    padding-bottom: 3px;
+    padding-top: 3.5px;
+
+    width: 30px;
+}
+.social li a:hover {
+    opacity: 0.8;
+ 
+}
+#fb a {
+    background-color: #3b5998;
+}
+#twitter a {
+    background-color: #55acef;
+}
+#google a {
+    background-color: #d9442f;
+}
+#insta a {
+    background-color: #3e6d93;
+}
+#git a {
+    background-color: #ccc;
+}
+#email a {
+    background-color: #2980b9;
+    padding-left: 0.7px;
+}
+#green{
+	color: #00AA55;
+}
+
+@media screen and (max-width: 600px) {
+
+.info p, .social{
+width: auto;
+}
+.info{
+	height: auto;
+}
+}
