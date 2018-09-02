@@ -132,8 +132,8 @@ margin-top: -142px;
     background-color: #2980b9;
     padding-left: 0.7px;
 }
-#green{
-	color: #00AA55;
+#green, .info p a{
+	color: #00AA55 !important;
 }
 
 @media screen and (max-width: 600px) {
