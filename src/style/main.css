@@ -1,0 +1,291 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400");
+@font-face {
+  font-family: "imohamad";
+  src: url("../fonts/imohamad.eot");
+  src: url("../fonts/imohamad.eot?#iefix") format("embedded-opentype"), url("../fonts/imohamad.woff2") format("woff2"), url("../fonts/imohamad.woff") format("woff"), url("../fonts/imohamad.ttf") format("truetype"), url("../fonts/imohamad.svg#imohamad") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "imohamad";
+    src: url("../fonts/imohamad.svg#imohamad") format("svg");
+  }
+}
+
+[data-icons8]:before {
+  content: attr(data-icons8);
+}
+
+.icons8,
+[data-icons8]:before,
+.icons8-email:before,
+.icons8-facebook:before,
+.icons8-instagram:before,
+.icons8-octocat:before,
+.icons8-twitter:before {
+  display: inline-block;
+  font-family: "imohamad";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icons8-email:before {
+  content: "\f104";
+}
+
+.icons8-facebook:before {
+  content: "\f100";
+}
+
+.icons8-instagram:before {
+  content: "\f102";
+}
+
+.icons8-octocat:before {
+  content: "\f103";
+}
+
+.icons8-twitter:before {
+  content: "\f101";
+}
+
+html {
+  background: #11998e;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#11998e), to(#38ef7d));
+  background: linear-gradient(to right, #11998e 0%, #38ef7d 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11998e', endColorstr='#38ef7d',GradientType=1 );
+  /* IE6-9 */
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(../images/bg.svg) no-repeat bottom right;
+  background-size: 70%;
+}
+
+body .hide {
+  display: none;
+}
+
+.main {
+  height: auto;
+  color: #fff;
+  padding-top: 8%;
+  -webkit-animation: ltr 1.5s forwards 0s ease;
+          animation: ltr 1.5s forwards 0s ease;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+  -ms-grid-rows: 1fr 50px;
+      grid-template-rows: 1fr 50px;
+      grid-template-areas: "avatar about"
+ "avatar social";
+}
+
+.main .avatar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: avatar;
+  text-align: right;
+}
+
+.main .avatar img {
+  width: 100px;
+  height: 100px;
+  border: solid 3px #fff;
+  border-radius: 80px;
+  margin-top: 1.5rem;
+}
+
+.main .about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: about;
+}
+
+.main .about h4 {
+  font-size: 3.2rem;
+}
+
+.main .about p {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+}
+
+.main .about p span,
+.main .about p a {
+  color: #1c4cb4;
+}
+
+.main .social {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: social;
+}
+
+.main .social i {
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+.main .social a {
+  display: inline-block;
+  margin-right: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.main .social a :hover {
+  color: #1c4cb4;
+}
+
+@media screen and (max-width: 48rem) {
+  .main {
+    -webkit-animation: top 1.5s forwards 0s ease;
+            animation: top 1.5s forwards 0s ease;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 120px 1fr 50px;
+        grid-template-rows: 120px 1fr 50px;
+        grid-template-areas: "avatar"
+ "about"
+ "social";
+  }
+  .main .avatar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: avatar;
+    text-align: center;
+  }
+  .main .avatar img {
+    margin-top: 0;
+  }
+  .main .about {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: about;
+    text-align: center;
+  }
+  .main .about h4 {
+    font-size: 2.8rem;
+  }
+  .main .about p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  .main .social {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: social;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .main .about h4 {
+    font-size: 2.5rem;
+  }
+  .main .about p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  html {
+    background: #11998e;
+    /* Old browsers */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11998e', endColorstr='#38ef7d',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+  .main .about h4 {
+    font-size: 1.8rem;
+  }
+  .main .about p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  .main .about p {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+}
+
+@-webkit-keyframes ltr {
+  0% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(xx) translateX(0);
+            transform: rotate(xx) translateX(0);
+  }
+}
+
+@keyframes ltr {
+  0% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(xx) translateX(0);
+            transform: rotate(xx) translateX(0);
+  }
+}
+
+@-webkit-keyframes top {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(xx) translateY(0);
+            transform: rotate(xx) translateY(0);
+  }
+}
+
+@keyframes top {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(xx) translateY(0);
+            transform: rotate(xx) translateY(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
