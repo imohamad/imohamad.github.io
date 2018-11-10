@@ -1,4 +1,4 @@
-@import url("reset.css");
+@import url("../style/reset.css");
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400");
 
 //font icon
@@ -151,7 +151,13 @@ body {
   }
 }
 @media screen and(max-width: 48rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .main {
+    padding-top: 0;
     animation: top 1.5s forwards 0s ease;
     grid-template-columns: 1fr;
     grid-template-rows: 120px 1fr 50px;

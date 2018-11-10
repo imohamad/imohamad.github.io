@@ -1,4 +1,4 @@
-@import url("reset.css");
+@import url("../style/reset.css");
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400");
 @font-face {
   font-family: "imohamad";
@@ -99,8 +99,7 @@ body .hide {
       grid-template-columns: 200px 1fr;
   -ms-grid-rows: 1fr 50px;
       grid-template-rows: 1fr 50px;
-      grid-template-areas: "avatar about"
- "avatar social";
+      grid-template-areas: "avatar about" "avatar social";
 }
 
 .main .avatar {
@@ -163,16 +162,26 @@ body .hide {
 }
 
 @media screen and (max-width: 48rem) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .main {
+    padding-top: 0;
     -webkit-animation: top 1.5s forwards 0s ease;
             animation: top 1.5s forwards 0s ease;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 120px 1fr 50px;
         grid-template-rows: 120px 1fr 50px;
-        grid-template-areas: "avatar"
- "about"
- "social";
+        grid-template-areas: "avatar" "about" "social";
   }
   .main .avatar {
     -ms-grid-row: 1;
